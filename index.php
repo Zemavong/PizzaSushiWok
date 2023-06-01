@@ -26,7 +26,7 @@ foreach ($categories as $category) {
             echo
                 '<div class="item">
                     <img src="template/www/img/' . $position['imgSrc'] . '">
-                     <a href="cart.php?id=' . $position['id'] . '">'. $position['name'] .'</a>
+                     <a href="cart.php?id=' . $position['id'] . '">' . $position['name'] . '</a>
                      <p>Стоимость - ' . $position['price'] .
                 '</p></div>';
         }

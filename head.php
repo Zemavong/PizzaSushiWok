@@ -7,11 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>
         <?php
-            if (!$_GET['id']) {
-                echo "Меню";
-            } else {
-                echo "Карточка";
-            }
+        if (!$_GET['id']) {
+            echo "Меню";
+        } else {
+            echo "Карточка";
+        }
         ?>
     </title>
     <link rel="stylesheet" href="template/www/style/style.css">

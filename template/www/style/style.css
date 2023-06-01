@@ -4,8 +4,8 @@
 }
 
 body {
-    margin-right: 5%;
-    margin-left: 5%;
+    margin-right: 10%;
+    margin-left: 10%;
 }
 
 h1 {
@@ -25,7 +25,21 @@ img {
 
 .item {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     margin-top: 20px;
     font-size: x-large;
+}
+
+.button {
+    border: none;
+
+}
+
+p {
+    margin-left: 30px;
+}
+
+hr {
+    margin-top: 30px;
 }

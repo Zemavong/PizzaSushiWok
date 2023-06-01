@@ -1,19 +1,8 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="template/www/style/style.css">
-</head>
-<header>
-    <h1>Menu</h1>
-</header>
-<body>
-
 <?php
+
+//Код написан в процедурном стиле, так как это быстрее. При необходимости могу написать с ООП-подходом
+
+include_once 'head.php';
 
 $pdo = new PDO('sqlite:pizzasushiwok.db');
 
@@ -36,10 +25,10 @@ foreach ($categories as $category) {
         foreach ($positions as $position) {
             echo
                 '<div class="item">
-                    <img src="template/www/img/'. $position['imgSrc']. '"><p>'
-                    . $position['name']. '<br>Стоимость - ' . $position['price'] . '
-                    <br>Description
-                 </p></div>';
+                    <img src="template/www/img/' . $position['imgSrc'] . '">
+                     <a href="cart.php?id=' . $position['id'] . '">'. $position['name'] .'</a>
+                     <p>Стоимость - ' . $position['price'] .
+                '</p></div>';
         }
     }
 }
